@@ -1,0 +1,42 @@
+running egg_info
+writing ../build/follow_person/follow_person.egg-info/PKG-INFO
+writing dependency_links to ../build/follow_person/follow_person.egg-info/dependency_links.txt
+writing entry points to ../build/follow_person/follow_person.egg-info/entry_points.txt
+writing requirements to ../build/follow_person/follow_person.egg-info/requires.txt
+writing top-level names to ../build/follow_person/follow_person.egg-info/top_level.txt
+reading manifest file '../build/follow_person/follow_person.egg-info/SOURCES.txt'
+writing manifest file '../build/follow_person/follow_person.egg-info/SOURCES.txt'
+running build
+running build_py
+copying follow_person/person_detection_nav.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+copying follow_person/path_playback.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+copying follow_person/lidar_transform.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+copying follow_person/path_record.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+copying follow_person/nav2_goal.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+copying follow_person/person_detection_lidar_nav.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+running install
+running install_lib
+copying /home/kirils/final/build/follow_person/build/lib/follow_person/person_detection_nav.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+copying /home/kirils/final/build/follow_person/build/lib/follow_person/path_playback.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+copying /home/kirils/final/build/follow_person/build/lib/follow_person/lidar_transform.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+copying /home/kirils/final/build/follow_person/build/lib/follow_person/path_record.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+copying /home/kirils/final/build/follow_person/build/lib/follow_person/nav2_goal.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+copying /home/kirils/final/build/follow_person/build/lib/follow_person/person_detection_lidar_nav.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/person_detection_nav.py to person_detection_nav.cpython-310.pyc
+byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/path_playback.py to path_playback.cpython-310.pyc
+byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/lidar_transform.py to lidar_transform.cpython-310.pyc
+byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/path_record.py to path_record.cpython-310.pyc
+byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/nav2_goal.py to nav2_goal.cpython-310.pyc
+byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/person_detection_lidar_nav.py to person_detection_lidar_nav.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/follow_person/follow_person.egg-info to /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person-0.0.0-py3.10.egg-info
+running install_scripts
+Installing lidar_transform script to /home/kirils/final/install/follow_person/lib/follow_person
+Installing nav2_goal script to /home/kirils/final/install/follow_person/lib/follow_person
+Installing path_playback script to /home/kirils/final/install/follow_person/lib/follow_person
+Installing path_record script to /home/kirils/final/install/follow_person/lib/follow_person
+Installing person_detection_lidar_nav script to /home/kirils/final/install/follow_person/lib/follow_person
+Installing person_detection_nav script to /home/kirils/final/install/follow_person/lib/follow_person
+writing list of installed files to '/home/kirils/final/build/follow_person/install.log'

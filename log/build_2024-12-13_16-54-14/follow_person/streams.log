@@ -1,0 +1,44 @@
+[1.027s] Invoking command in '/home/kirils/final/follow_person': PYTHONPATH=/home/kirils/final/build/follow_person/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kirils/final/install/follow_person/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/follow_person build --build-base /home/kirils/final/build/follow_person/build install --record /home/kirils/final/build/follow_person/install.log --single-version-externally-managed install_data
+[1.307s] running egg_info
+[1.308s] writing ../build/follow_person/follow_person.egg-info/PKG-INFO
+[1.308s] writing dependency_links to ../build/follow_person/follow_person.egg-info/dependency_links.txt
+[1.308s] writing entry points to ../build/follow_person/follow_person.egg-info/entry_points.txt
+[1.309s] writing requirements to ../build/follow_person/follow_person.egg-info/requires.txt
+[1.309s] writing top-level names to ../build/follow_person/follow_person.egg-info/top_level.txt
+[1.310s] reading manifest file '../build/follow_person/follow_person.egg-info/SOURCES.txt'
+[1.313s] writing manifest file '../build/follow_person/follow_person.egg-info/SOURCES.txt'
+[1.313s] running build
+[1.313s] running build_py
+[1.313s] copying follow_person/person_detection_nav.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+[1.313s] copying follow_person/path_playback.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+[1.313s] copying follow_person/lidar_transform.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+[1.313s] copying follow_person/path_record.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+[1.314s] copying follow_person/nav2_goal.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+[1.314s] copying follow_person/person_detection_lidar_nav.py -> /home/kirils/final/build/follow_person/build/lib/follow_person
+[1.314s] running install
+[1.315s] running install_lib
+[1.315s] copying /home/kirils/final/build/follow_person/build/lib/follow_person/person_detection_nav.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+[1.316s] copying /home/kirils/final/build/follow_person/build/lib/follow_person/path_playback.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+[1.316s] copying /home/kirils/final/build/follow_person/build/lib/follow_person/lidar_transform.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+[1.316s] copying /home/kirils/final/build/follow_person/build/lib/follow_person/path_record.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+[1.316s] copying /home/kirils/final/build/follow_person/build/lib/follow_person/nav2_goal.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+[1.317s] copying /home/kirils/final/build/follow_person/build/lib/follow_person/person_detection_lidar_nav.py -> /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person
+[1.317s] byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/person_detection_nav.py to person_detection_nav.cpython-310.pyc
+[1.319s] byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/path_playback.py to path_playback.cpython-310.pyc
+[1.320s] byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/lidar_transform.py to lidar_transform.cpython-310.pyc
+[1.320s] byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/path_record.py to path_record.cpython-310.pyc
+[1.321s] byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/nav2_goal.py to nav2_goal.cpython-310.pyc
+[1.322s] byte-compiling /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person/person_detection_lidar_nav.py to person_detection_lidar_nav.cpython-310.pyc
+[1.324s] running install_data
+[1.324s] running install_egg_info
+[1.326s] removing '/home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person-0.0.0-py3.10.egg-info' (and everything under it)
+[1.326s] Copying ../build/follow_person/follow_person.egg-info to /home/kirils/final/install/follow_person/lib/python3.10/site-packages/follow_person-0.0.0-py3.10.egg-info
+[1.327s] running install_scripts
+[1.350s] Installing lidar_transform script to /home/kirils/final/install/follow_person/lib/follow_person
+[1.350s] Installing nav2_goal script to /home/kirils/final/install/follow_person/lib/follow_person
+[1.350s] Installing path_playback script to /home/kirils/final/install/follow_person/lib/follow_person
+[1.350s] Installing path_record script to /home/kirils/final/install/follow_person/lib/follow_person
+[1.350s] Installing person_detection_lidar_nav script to /home/kirils/final/install/follow_person/lib/follow_person
+[1.350s] Installing person_detection_nav script to /home/kirils/final/install/follow_person/lib/follow_person
+[1.350s] writing list of installed files to '/home/kirils/final/build/follow_person/install.log'
+[1.397s] Invoked command in '/home/kirils/final/follow_person' returned '0': PYTHONPATH=/home/kirils/final/build/follow_person/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kirils/final/install/follow_person/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/follow_person build --build-base /home/kirils/final/build/follow_person/build install --record /home/kirils/final/build/follow_person/install.log --single-version-externally-managed install_data

@@ -1,0 +1,64 @@
+[0.704s] Invoking command in '/home/kirils/final/follow_person_twist': PYTHONPATH=/home/kirils/final/build/follow_person_twist/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/follow_person_twist build --build-base /home/kirils/final/build/follow_person_twist/build install --record /home/kirils/final/build/follow_person_twist/install.log --single-version-externally-managed install_data
+[0.897s] running egg_info
+[0.898s] creating ../build/follow_person_twist/follow_person_twist.egg-info
+[0.898s] writing ../build/follow_person_twist/follow_person_twist.egg-info/PKG-INFO
+[0.899s] writing dependency_links to ../build/follow_person_twist/follow_person_twist.egg-info/dependency_links.txt
+[0.899s] writing entry points to ../build/follow_person_twist/follow_person_twist.egg-info/entry_points.txt
+[0.899s] writing requirements to ../build/follow_person_twist/follow_person_twist.egg-info/requires.txt
+[0.899s] writing top-level names to ../build/follow_person_twist/follow_person_twist.egg-info/top_level.txt
+[0.899s] writing manifest file '../build/follow_person_twist/follow_person_twist.egg-info/SOURCES.txt'
+[0.900s] reading manifest file '../build/follow_person_twist/follow_person_twist.egg-info/SOURCES.txt'
+[0.901s] writing manifest file '../build/follow_person_twist/follow_person_twist.egg-info/SOURCES.txt'
+[0.901s] running build
+[0.901s] running build_py
+[0.901s] creating /home/kirils/final/build/follow_person_twist/build
+[0.901s] creating /home/kirils/final/build/follow_person_twist/build/lib
+[0.901s] creating /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.901s] copying follow_person_twist/__init__.py -> /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.901s] copying follow_person_twist/path_playback.py -> /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.902s] copying follow_person_twist/lidar.py -> /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.902s] copying follow_person_twist/person_detection_lidar.py -> /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.902s] copying follow_person_twist/lidar_transform.py -> /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.902s] copying follow_person_twist/path_record.py -> /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.902s] copying follow_person_twist/person_follow.py -> /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.902s] copying follow_person_twist/person_detection.py -> /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist
+[0.902s] running install
+[0.902s] running install_lib
+[0.902s] creating /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] copying /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist/__init__.py -> /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] copying /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist/path_playback.py -> /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] copying /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist/lidar.py -> /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] copying /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist/person_detection_lidar.py -> /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] copying /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist/lidar_transform.py -> /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] copying /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist/path_record.py -> /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] copying /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist/person_follow.py -> /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] copying /home/kirils/final/build/follow_person_twist/build/lib/follow_person_twist/person_detection.py -> /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist
+[0.903s] byte-compiling /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist/__init__.py to __init__.cpython-310.pyc
+[0.904s] byte-compiling /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist/path_playback.py to path_playback.cpython-310.pyc
+[0.905s] byte-compiling /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist/lidar.py to lidar.cpython-310.pyc
+[0.905s] byte-compiling /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist/person_detection_lidar.py to person_detection_lidar.cpython-310.pyc
+[0.906s] byte-compiling /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist/lidar_transform.py to lidar_transform.cpython-310.pyc
+[0.906s] byte-compiling /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist/path_record.py to path_record.cpython-310.pyc
+[0.907s] byte-compiling /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist/person_follow.py to person_follow.cpython-310.pyc
+[0.907s] byte-compiling /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist/person_detection.py to person_detection.cpython-310.pyc
+[0.908s] running install_data
+[0.908s] creating /home/kirils/final/install/follow_person_twist/share/ament_index
+[0.908s] creating /home/kirils/final/install/follow_person_twist/share/ament_index/resource_index
+[0.908s] creating /home/kirils/final/install/follow_person_twist/share/ament_index/resource_index/packages
+[0.908s] copying resource/follow_person_twist -> /home/kirils/final/install/follow_person_twist/share/ament_index/resource_index/packages
+[0.908s] copying package.xml -> /home/kirils/final/install/follow_person_twist/share/follow_person_twist
+[0.908s] creating /home/kirils/final/install/follow_person_twist/share/follow_person_twist/launch
+[0.909s] copying launch/follow_person_twist_launch.py -> /home/kirils/final/install/follow_person_twist/share/follow_person_twist/launch
+[0.909s] copying launch/follow_person_twist_launch_lidar.py -> /home/kirils/final/install/follow_person_twist/share/follow_person_twist/launch
+[0.909s] running install_egg_info
+[0.910s] Copying ../build/follow_person_twist/follow_person_twist.egg-info to /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist-0.0.0-py3.10.egg-info
+[0.910s] running install_scripts
+[0.926s] Installing lidar script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[0.926s] Installing lidar_transform script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[0.926s] Installing path_playback script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[0.926s] Installing path_record script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[0.926s] Installing person_detection script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[0.926s] Installing person_detection_lidar script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[0.926s] Installing person_follow script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[0.927s] writing list of installed files to '/home/kirils/final/build/follow_person_twist/install.log'
+[0.955s] Invoked command in '/home/kirils/final/follow_person_twist' returned '0': PYTHONPATH=/home/kirils/final/build/follow_person_twist/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/follow_person_twist build --build-base /home/kirils/final/build/follow_person_twist/build install --record /home/kirils/final/build/follow_person_twist/install.log --single-version-externally-managed install_data

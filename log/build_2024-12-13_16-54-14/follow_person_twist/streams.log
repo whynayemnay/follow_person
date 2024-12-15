@@ -1,0 +1,27 @@
+[1.014s] Invoking command in '/home/kirils/final/follow_person_twist': PYTHONPATH=/home/kirils/final/build/follow_person_twist/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/follow_person_twist build --build-base /home/kirils/final/build/follow_person_twist/build install --record /home/kirils/final/build/follow_person_twist/install.log --single-version-externally-managed install_data
+[1.293s] running egg_info
+[1.294s] writing ../build/follow_person_twist/follow_person_twist.egg-info/PKG-INFO
+[1.295s] writing dependency_links to ../build/follow_person_twist/follow_person_twist.egg-info/dependency_links.txt
+[1.295s] writing entry points to ../build/follow_person_twist/follow_person_twist.egg-info/entry_points.txt
+[1.295s] writing requirements to ../build/follow_person_twist/follow_person_twist.egg-info/requires.txt
+[1.295s] writing top-level names to ../build/follow_person_twist/follow_person_twist.egg-info/top_level.txt
+[1.297s] reading manifest file '../build/follow_person_twist/follow_person_twist.egg-info/SOURCES.txt'
+[1.300s] writing manifest file '../build/follow_person_twist/follow_person_twist.egg-info/SOURCES.txt'
+[1.300s] running build
+[1.300s] running build_py
+[1.300s] running install
+[1.301s] running install_lib
+[1.303s] running install_data
+[1.303s] running install_egg_info
+[1.305s] removing '/home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist-0.0.0-py3.10.egg-info' (and everything under it)
+[1.306s] Copying ../build/follow_person_twist/follow_person_twist.egg-info to /home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages/follow_person_twist-0.0.0-py3.10.egg-info
+[1.307s] running install_scripts
+[1.330s] Installing lidar script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[1.330s] Installing lidar_transform script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[1.330s] Installing path_playback script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[1.330s] Installing path_record script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[1.330s] Installing person_detection script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[1.330s] Installing person_detection_lidar script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[1.330s] Installing person_follow script to /home/kirils/final/install/follow_person_twist/lib/follow_person_twist
+[1.330s] writing list of installed files to '/home/kirils/final/build/follow_person_twist/install.log'
+[1.372s] Invoked command in '/home/kirils/final/follow_person_twist' returned '0': PYTHONPATH=/home/kirils/final/build/follow_person_twist/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kirils/final/install/follow_person_twist/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/follow_person_twist build --build-base /home/kirils/final/build/follow_person_twist/build install --record /home/kirils/final/build/follow_person_twist/install.log --single-version-externally-managed install_data

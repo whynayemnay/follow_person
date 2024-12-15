@@ -1,0 +1,9 @@
+[console_scripts]
+lidar = follow_person_twist.lidar:main
+lidar_transform = follow_person_twist.lidar_transform:main
+path_playback = follow_person_twist.path_playback:main
+path_record = follow_person_twist.path_record:main
+person_detection = follow_person_twist.person_detection:main
+person_detection_lidar = follow_person_twist.person_detection_lidar:main
+person_follow = follow_person_twist.person_follow:main
+
