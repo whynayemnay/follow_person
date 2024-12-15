@@ -4,7 +4,7 @@ Make sure you have installed ultralytics on the correct version of python that i
 
 Run colcon build to build the package and source it.
 
-Start the robot in the docking position. And AMCL running is set by default, otherwise there are some changes to subscribed topics in path_record.py file needed.
+Start the robot in the docking position. The nav2 and either SLAM or AMCL also need to be running. The package is set to run with AMCL by default, otherwise there are some changes to subscribed topics in path_record.py file needed.
 
 run: ros2 launch follow_person follow_person_launch.py / ros2 launch follow_person follow_person_launch_lidar.py to run all the nodes
 
