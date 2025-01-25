@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='ASCII'?>
+<sdf version='1.7'>
+  <world name='warehouse'>
+    <physics type="ode">
+      <max_step_size>0.003</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin name='ignition::gazebo::systems::Physics' filename='libignition-gazebo-physics-system.so'/>
+    <plugin name='ignition::gazebo::systems::UserCommands' filename='libignition-gazebo-user-commands-system.so'/>
+    <plugin name='ignition::gazebo::systems::SceneBroadcaster' filename='libignition-gazebo-scene-broadcaster-system.so'/>
+
+    <scene>
+      <ambient>1 1 1 1</ambient>
+      <background>0.3 0.7 0.9 1</background>
+      <shadows>0</shadows>
+      <grid>false</grid>
+    </scene>
+
+    <!-- TODO(rkreinin): Fix lighting so that spawning multiple robots does not crash the sim-->
+    <!-- <light type="directional" name="sun">
+      <cast_shadows>0</cast_shadows>
+      <pose>-5 -3 10 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>1 1 1 1</specular>
+      <direction>0 0 -1</direction>
+    </light> -->
+
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0.0 0.0 1</normal>
+              <size>1 1</size>
+            </plane>
+          </geometry>
+        </collision>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+    </model>
+
+    <!-- Base -->
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Warehouse
+      </uri>
+      <name>warehouse</name>
+      <pose>0 0 -0.1 0 0 0</pose>
+    </include>
+
+    <!-- Pallet Box Mobile -->
+    <!--
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/pallet_box_mobile
+      </uri>
+      <name>pallet_box_0</name>
+      <pose>-4 12 0.01 0 0 0</pose>
+      <static>true</static>
+    </include> -->
+
+    <!-- Shelves -->
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf_big
+      </uri>
+      <name>shelf_big_0</name>
+      <pose>-8.5 -13 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf_big
+      </uri>
+      <name>shelf_big_1</name>
+      <pose>6.5 -13 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf_big
+      </uri>
+      <name>shelf_big_2</name>
+      <pose>-1.5 -13 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf
+      </uri>
+      <name>shelf_3</name>
+      <pose>13.5 4.5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf
+      </uri>
+      <name>shelf_4</name>
+      <pose>10 4.5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf
+      </uri>
+      <name>shelf_5</name>
+      <pose>13.5 -21 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf
+      </uri>
+      <name>shelf_6</name>
+      <pose>13.5 -15 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf
+      </uri>
+      <name>shelf_7</name>
+      <pose>0.4 -2 0 0 -0 0</pose>
+    </include>
+
+    <!-- Navigation Challenge section -->
+
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf_big
+      </uri>
+      <name>shelf_big_3</name>
+      <pose>3.5 9.5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf_big
+      </uri>
+      <name>shelf_big_4</name>
+      <pose>-1.3 18.5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf
+      </uri>
+      <name>shelf_0</name>
+      <pose>-10 21.5 0 0 -0 1.57</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf
+      </uri>
+      <name>shelf_1</name>
+      <pose>-7 23.6 0 0 -0 1.57</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/MovAi/models/shelf
+      </uri>
+      <name>shelf_2</name>
+      <pose>-4 21.5 0 0 -0 1.57</pose>
+    </include>
+
+    <!-- Barriers -->
+
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Jersey Barrier
+      </uri>
+      <name>barrier_0</name>
+      <pose>-10.4 14.75 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Jersey Barrier
+      </uri>
+      <name>barrier_1</name>
+      <pose>-10.4 10.5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Jersey Barrier
+      </uri>
+      <name>barrier_2</name>
+      <pose>-10.4 6.5 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Jersey Barrier
+      </uri>
+      <name>barrier_3</name>
+      <pose>-12.85 4.85 0 0 0 0</pose>
+    </include>
+
+    <!-- Chairs -->
+
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Chair
+      </uri>
+      <name>chair_0</name>
+      <pose>14.3 -5.5 0 0 -0 3</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Chair
+      </uri>
+      <name>chair_1</name>
+      <pose>14.3 -4 0 0 -0 -3</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/foldable_chair
+      </uri>
+      <name>fchair_0</name>
+      <pose>-11.5 6.4 0 0 -0 -1.8</pose>
+    </include>
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/foldable_chair
+      </uri>
+      <name>fchair1</name>
+      <pose>-14 6.5 0 0 -0 1.9</pose>
+    </include>
+    
+    <!-- Table -->
+
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Table
+      </uri>
+      <name>table0</name>
+      <pose>-12.7 6.5 0 0 0 0</pose>
+    </include>
+
+    <!-- People -->
+
+    <!--
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/Rescue Randy Sitting
+      </uri>
+      <name>Person 0 - Sitting</name>
+      <pose>14.65 -10 0 0 0 -1.57</pose>
+    </include> -->
+
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/OpenRobotics/models/MaleVisitorOnPhone
+      </uri>
+      <name>Person 1 - Standing</name>
+      <pose>1 -1 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+      <uri>
+      https://fuel.gazebosim.org/1.0/plateau/models/Casual female
+      </uri>
+      <name>Person 2 - Walking</name>
+      <pose>-12 15 0 0 0 0</pose>
+    </include>
+
+    <actor name="male_walk">
+      <skin>
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <scale>1.0</scale>
+      </skin>
+      <animation name="walk">
+        <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
+        <name>walking</name>
+        <interpolate_x>true</interpolate_x>
+      </animation>
+      <script>
+        <loop>true</loop>
+        <delay_start>0.0</delay_start>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="walk">
+
+          <!-- Starting Point: Facing South -->
+          <waypoint>
+            <time>0</time>
+            <pose>-1.0303 -0.03903 1 0 0 -1.57</pose> <!-- South -->
+          </waypoint>
+
+          <!-- Moving South to second waypoint -->
+          <waypoint>
+            <time>6</time>
+            <pose>-4.03866 -0.01695 1 0 0 -1.57</pose> <!-- South -->
+          </waypoint>
+          <!-- Rotation to face West -->
+          <waypoint>
+            <time>6.1</time>
+            <pose>-4.03866 -0.01695 1 0 0 3.14</pose> <!-- West -->
+          </waypoint>
+
+          <!-- Moving West -->
+          <waypoint>
+            <time>12</time>
+            <pose>-4.03652 3.97080 1 0 0 3.14</pose> <!-- West -->
+          </waypoint>
+          <!-- Rotation to face North -->
+          <waypoint>
+            <time>12.1</time>
+            <pose>-4.03652 3.97080 1 0 0 1.57</pose> <!-- North -->
+          </waypoint>
+
+          <!-- Moving North -->
+          <waypoint>
+            <time>18</time>
+            <pose>2.99303 3.98645 1 0 0 1.57</pose> <!-- North -->
+          </waypoint>
+          <!-- Rotation to face East -->
+          <waypoint>
+            <time>18.1</time>
+            <pose>2.99303 3.98645 1 0 0 0</pose> <!-- East -->
+          </waypoint>
+
+          <!-- Moving East -->
+          <waypoint>
+            <time>24</time>
+            <pose>2.90789 -23.61609 1 0 0 0</pose> <!-- East -->
+          </waypoint>
+          <!-- Rotation to face South -->
+          <waypoint>
+            <time>24.1</time>
+            <pose>2.90789 -23.61609 1 0 0 -1.57</pose> <!-- South -->
+          </waypoint>
+
+          <!-- Moving South -->
+          <waypoint>
+            <time>30</time>
+            <pose>-5.38466 -23.58088 1 0 0 -1.57</pose> <!-- South -->
+          </waypoint>
+          <!-- Rotation to face West -->
+          <waypoint>
+            <time>30.1</time>
+            <pose>-5.38466 -23.58088 1 0 0 3.14</pose> <!-- West -->
+          </waypoint>
+
+          <!-- Moving West -->
+          <waypoint>
+            <time>36</time>
+            <pose>-5.00996 -0.03118 1 0 0 3.14</pose> <!-- West -->
+          </waypoint>
+          <!-- Rotation to face North -->
+          <waypoint>
+            <time>36.1</time>
+            <pose>-5.00996 -0.03118 1 0 0 1.57</pose> <!-- North -->
+          </waypoint>
+
+          <!-- Moving North -->
+          <waypoint>
+            <time>42</time>
+            <pose>-1.00510 -0.03785 1 0 0 1.57</pose> <!-- North -->
+          </waypoint>
+          <!-- Rotation to face South (for looping) -->
+          <waypoint>
+            <time>42.1</time>
+            <pose>-1.00510 -0.03785 1 0 0 -1.57</pose> <!-- South -->
+          </waypoint>
+
+        </trajectory>
+      </script>
+    </actor>
+
+  </world>
+</sdf>
