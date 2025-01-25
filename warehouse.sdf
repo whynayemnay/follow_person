@@ -255,6 +255,8 @@
       <pose>-12 15 0 0 0 0</pose>
     </include>
 
+    <!-- Walk script -->
+
     <actor name="male_walk">
       <skin>
         <filename>https://fuel.gazebosim.org/1.0/Mingfei/models/actor/tip/files/meshes/walk.dae</filename>
