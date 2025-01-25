@@ -19,3 +19,10 @@ ros2 service call /start_navigation std_srvs/srv/Trigger "{}"
 ros2 service call /stop_navigation std_srvs/srv/Trigger "{}"
 
 these are the service call commands that are available, what they do is self-explanatory. Before starting playback stop the navigation otherwise navigation will override the playback process.
+
+
+## warehouse.sdf
+
+The script to create a model of a person with a walking animation. Either replace the already existing warehouse.sdf file that comes with TB4 simulation under turtlebot4_simulator/turtlebot4_ignition_bringup/worlds
+/warehouse.sdf or add the script starting from lines 258-361 to the same file. This script should automatically dowload the needed model and animation for the model from the official Gazebo hosting platform. After loading the world the model will spawn and go through set waypoints.
+
